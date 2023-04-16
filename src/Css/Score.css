@@ -1,0 +1,172 @@
+.whole{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.score{
+    align-self: center;
+    width: 100%;
+    margin: auto;
+    padding: 0%;
+    height: max-content;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    border-radius: 1em;
+    z-index: 2;
+    background: linear-gradient(to right, rgb(115, 194, 233), rgb(255, 166, 181));
+    text-align: center;
+}
+
+.full{
+    width: 100%;
+}
+
+.line{
+    position: static;
+    display: flex;
+    margin: 0 auto 0 auto;
+    top: 0;
+    left: 0;
+    width: 95%;
+    align-items: center;
+}
+
+h3{
+    margin: .1em;
+}
+
+.line p{
+    background: linear-gradient(to right, rgb(115, 194, 233), rgb(255, 166, 181));
+    border: 1px solid black;
+    width: 100%;
+    height: .75em;
+    margin: .25em;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+}
+
+img {
+    width:1.5em
+}
+
+.boy{
+    background-color: rgb(190, 233, 255);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.girl{
+    background-color: rgb(255, 215, 222);
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.label{
+    display: flex;
+    justify-content: space-around;
+}
+
+.label p{
+    margin: 0 auto .25em auto;
+}
+
+.guessNow{
+    margin: .1em auto 1em auto
+}
+
+.momOne{
+    width:25px;
+    position: absolute;
+    left: 18%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(190, 233, 255);
+    width:1.25em
+}
+
+.momTwo{
+    width:25px;
+    position: absolute;
+    left: 57%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(255, 166, 181);
+    width:1.25em
+}
+
+.momThree{
+    width:25px;
+    position: absolute;
+    left: 30%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(190, 233, 255);
+    width:1.25em
+}
+
+.momFour{
+    width:25px;
+    position: absolute;
+    left: 40%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(190, 233, 255);
+    width:1.25em
+}
+
+.momFive{
+    width:25px;
+    position: absolute;
+    left: 57%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(255, 166, 181);
+    width:1.25em
+}
+
+.momSix{
+    width:25px;
+    position: absolute;
+    left: 70%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(255, 166, 181);
+    width:1.25em
+}
+
+.momSeven{
+    width:25px;
+    position: absolute;
+    left: 73%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(255, 166, 181);
+    width:1.25em
+}
+
+.momEight{
+    width:25px;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    width:1.25em
+}
+
+.momNine{
+    width:25px;
+    position: absolute;
+    left: 20%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(190, 233, 255);
+    width:1.25em
+}
+
+
+
