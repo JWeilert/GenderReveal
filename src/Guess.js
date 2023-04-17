@@ -10,7 +10,9 @@ import "./Css/Guess.css";
 const Guess = () => {
   const [boyBox, setBoyBox] = useState(true);
   const [girlBox, setGirlBox] = useState(true);
-  const [correct, setCorrect] = useState(false);
+  const [correct, setCorrect] = useState(null);
+
+  const [open, setOpen] = useState(false);
 
   const [height, setHeight] = useState(null);
   const [width, setWidth] = useState(null);
@@ -22,17 +24,25 @@ const Guess = () => {
 
   return (
     <div className="guess">
-      {correct ? (
+      {open ? (
         <div>
-          <Confetti
-            className="confetti"
-            numberOfPieces={150}
-            width={width}
-            height={height}
-          />
-          <div className="show">
-            <h1>It's a Boy!</h1>
-          </div>
+          {correct ? (
+            <div>
+              <Confetti
+                className="confetti"
+                numberOfPieces={150}
+                width={width}
+                height={height}
+              />
+              <div className="showBoy">
+                <h1>It's a Boy!</h1>
+              </div>
+            </div>
+          ) : (
+            <div className="showGirl">
+              <h1>Maybe The Other One?</h1>
+            </div>
+          )}
         </div>
       ) : null}
       <div className="guessBox">
@@ -42,7 +52,14 @@ const Guess = () => {
           onClick={() => {
             setBoyBox(!boyBox);
             setCorrect(!correct);
-            console.log(boyBox);
+            if (boyBox === true) {
+              setGirlBox(true);
+              setOpen(true);
+            }
+            if (boyBox === false && girlBox === true) {
+              console.log("Open");
+              setOpen(false);
+            }
           }}
         />
       </div>
@@ -53,6 +70,15 @@ const Guess = () => {
           onClick={() => {
             setGirlBox(!girlBox);
             console.log(girlBox);
+            if (girlBox === true) {
+              setBoyBox(true);
+              setCorrect(false);
+              setOpen(true);
+            }
+            if (boyBox === true && girlBox === false) {
+              console.log("Open");
+              setOpen(false);
+            }
           }}
         />
       </div>
