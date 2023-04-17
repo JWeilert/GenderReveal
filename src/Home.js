@@ -19,7 +19,7 @@ const Home = (props) => {
         <li></li>
       </ul>
       <div id="Box">
-        <button onClick={() => navigate("/score")}>Weilert Baby</button>
+        <button onClick={() => navigate("/score")}>Weilert Baby 2023</button>
       </div>
     </div>
   );

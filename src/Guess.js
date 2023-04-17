@@ -40,7 +40,7 @@ const Guess = () => {
             </div>
           ) : (
             <div className="showGirl">
-              <h1>Maybe The Other One?</h1>
+              <h1>Not Quite!</h1>
             </div>
           )}
         </div>
